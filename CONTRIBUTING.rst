@@ -157,8 +157,7 @@ For example:
 
 **When adding a new feature (in addition to the general list):**
 
-- Make sure to update the documentation (check whether the `installation`_,
-  `features`_, `recipes`_ and `quick start`_ require changes).
+- Make sure to update the documentation.
 
 GitHub Actions
 --------------
