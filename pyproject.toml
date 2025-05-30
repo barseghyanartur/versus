@@ -2,7 +2,7 @@
 name = "versus"
 description = "Package version comparison made easy."
 readme = "README.rst"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = []
 authors = [
     {name = "Artur Barseghyan", email = "artur.barseghyan@gmail.com"},
