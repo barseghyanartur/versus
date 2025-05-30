@@ -31,7 +31,7 @@ except ImportError:
     )
 
 __title__ = "versus"
-__version__ = "0.1"
+__version__ = "0.1.1"
 __author__ = "Artur Barseghyan <artur.barseghyan@gmail.com>"
 __copyright__ = "2023-2025 Artur Barseghyan"
 __license__ = "MIT"
@@ -48,6 +48,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 class Version:
+
     def __init__(self, version_str: str) -> None:
         self.version_str = version_str
         self.parts = self._parse_version(version_str)
@@ -83,18 +84,29 @@ class Version:
         return self._compare(other) == 0
 
 
+def normalise_package_name(name: str) -> str:
+    """
+    Normalise package name according to PEP 503:
+    lowercase and replace dots/underscores with hyphens.
+    """
+    return re.sub(r"[-_.]+", "-", name).lower()
+
+
 def get_version(
     package_name: str,
     fail_silently: bool = True,
 ) -> Optional[Version]:
+    """Get package version."""
+    normalised_name = normalise_package_name(package_name)
     try:
-        v = get_installed_version(package_name)
+        v = get_installed_version(normalised_name)
         return Version(v)
     except Exception as e:
         if fail_silently:
             return None
         raise RuntimeError(
-            f"Could not retrieve version for package '{package_name}': {e}"
+            f"Could not retrieve version for package '{package_name}' "
+            f"(normalized as '{normalised_name}'): {e}"
         ) from e
 
 # ----------------------------------------------------------------------------
@@ -141,6 +153,6 @@ class TestVersion(unittest.TestCase):
             get_version("nonexistent_package_xyz", fail_silently=False)
 
     def test_integration(self):
-        v = get_version("fake.py")
+        v = get_version("fake-py")
         self.assertTrue(v.gt("0.1"))
         self.assertTrue(v.lt("100"))
