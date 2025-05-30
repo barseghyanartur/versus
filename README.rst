@@ -5,6 +5,7 @@ versus
 
 .. _Django: https://www.djangoproject.com/
 .. _Pydantic: https://docs.pydantic.dev/
+.. _sphinx-autobuild: https://github.com/sphinx-doc/sphinx-autobuild
 
 .. Internal references
 
@@ -76,6 +77,8 @@ Documentation
 
 Usage
 =====
+Comparing `Django`_ versions.
+
 .. code-block:: python
     :name: test_get_version
 
@@ -89,6 +92,12 @@ Usage
     django_version.gte("5.2.1")  # True
     django_version.gte("5.2.2")  # True
 
+Comparing `sphinx-autobuild`_ versions:
+
+.. continue: test_get_version
+.. code-block:: python
+    :name: test_get_version_sphinx_autobuild
+
     sphinx_autobuild_version = get_version("sphinx-autobuild")
     print(sphinx_autobuild_version)  # 2024.10.3
 
@@ -96,6 +105,12 @@ Usage
     sphinx_autobuild_version.gte("2024.09")  # True
     sphinx_autobuild_version.gte("2024.11")  # False
     sphinx_autobuild_version.lte("2024.11")  # True
+
+Non-existent/non-installed package lookup would return ``None``:
+
+.. continue: test_get_version
+.. code-block:: python
+    :name: test_get_version_nonexistent_package
 
     nonexistent_package = get_version("nonexistent-package")
     print(nonexistent_package)  # None
