@@ -161,7 +161,7 @@ For example:
 
 GitHub Actions
 --------------
-Only non-EOL versions of Python and software `fake.py`_ aims to integrate with
+Only non-EOL versions of Python and software `versus`_ aims to integrate with
 are supported.
 
 On GitHub Actions includes tests for more than 40 different variations of
