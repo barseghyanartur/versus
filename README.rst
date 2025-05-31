@@ -91,7 +91,7 @@ Comparing `Django`_ versions.
     django_version.gte("4.2")  # True
     django_version.gte("5.2")  # True
     django_version.gte("5.2.1")  # True
-    django_version.gte("5.2.2")  # True
+    django_version.gte("5.2.2")  # False
 
 Comparing `sphinx-autobuild`_ versions:
 
