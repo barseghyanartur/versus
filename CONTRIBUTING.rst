@@ -1,7 +1,6 @@
 Contributor guidelines
 ======================
 
-.. _versus: https://versus.readthedocs.io
 .. _documentation: https://versus.readthedocs.io/#writing-documentation
 .. _testing: https://versus.readthedocs.io/#testing
 .. _pre-commit: https://pre-commit.com/#installation
@@ -161,13 +160,12 @@ For example:
 
 GitHub Actions
 --------------
-Only non-EOL versions of Python and software `versus`_ aims to integrate with
-are supported.
+Only non-EOL versions of Python and other software ``versus`` aims to
+integrate with are supported.
 
-On GitHub Actions includes tests for more than 40 different variations of
-Python versions and integration packages. Future, non-stable versions
-of Python are being tested too, so that new features/incompatibilities
-could be seen and adopted early.
+On GitHub Actions includes tests with all non-EOL Python versions.
+Future, non-stable versions of Python are being tested too, so that new
+features/incompatibilities could be seen and adopted early.
 
 For the list of Python versions supported by GitHub, see GitHub Actions
 `versions manifest`_.

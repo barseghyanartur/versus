@@ -1,5 +1,5 @@
 # Update version ONLY here
-VERSION := 0.1.2
+VERSION := 0.1.3
 SHELL := /bin/bash
 # Makefile for project
 VENV := ~/.virtualenvs/versus/bin/activate
@@ -23,7 +23,7 @@ build_docs_pdf:
 	$(MAKE) -C docs/ latexpdf
 
 auto_build_docs:
-	source $(VENV) && sphinx-autobuild docs docs/_build/html
+	source $(VENV) && sphinx-autobuild docs docs/_build/html --port 5001
 
 pre-commit:
 	pre-commit run --all-files
