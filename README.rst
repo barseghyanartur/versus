@@ -45,9 +45,9 @@ Package version comparison made easy.
     :target: https://coveralls.io/github/barseghyanartur/versus?branch=main
     :alt: Coverage
 
-`versus`_ is a standalone, portable, dependency-free library for comparing
-package versions from within the code. It supports variety of lookups, such as
-``lte``, ``lt``, ``gte``, ``gt`` and ``eq``.
+`versus`_ is a standalone, portable, dependency-free Python module for
+retrieving and comparing installed package versions. It supports variety of
+lookups, such as ``lte``, ``lt``, ``gte``, ``gt`` and ``eq``.
 
 Prerequisites
 =============
