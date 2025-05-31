@@ -18,9 +18,7 @@ Usage:
 
 import logging
 import re
-
 import unittest
-
 from importlib.metadata import version as get_installed_version
 from typing import Optional
 
