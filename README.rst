@@ -12,7 +12,8 @@ versus
 .. _versus: https://github.com/barseghyanartur/versus/
 .. _Read the Docs: http://versus.readthedocs.io/
 .. _Contributor guidelines: https://versus.readthedocs.io/en/latest/contributor_guidelines.html
-.. _llms.txt: https://barseghyanartur.github.io/versus/llms.txt
+.. _llms.txt: https://versus.readthedocs.io/en/latest/llms.txt
+.. _Tweak your test/coverage configuration: https://versus.readthedocs.io/en/latest/test_configuration_tweaks.txt
 
 Package version comparison made easy.
 
@@ -68,7 +69,7 @@ tests too. If it's more convenient to you, you could simply download the
 ``versus.py`` module and include it in your repository.
 
 Since tests are included, it won't have a negative impact on your test
-coverage (you might need to apply tweaks to your coverage configuration).
+coverage (you might need to `tweak your test/coverage configuration`_).
 
 Documentation
 =============
