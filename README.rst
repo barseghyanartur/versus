@@ -13,7 +13,7 @@ versus
 .. _Read the Docs: http://versus.readthedocs.io/
 .. _Contributor guidelines: https://versus.readthedocs.io/en/latest/contributor_guidelines.html
 .. _llms.txt: https://versus.readthedocs.io/en/latest/llms.txt
-.. _Tweak your test/coverage configuration: https://versus.readthedocs.io/en/latest/test_configuration_tweaks.txt
+.. _Tweak your test/coverage configuration: https://versus.readthedocs.io/en/latest/test_configuration_tweaks.html
 
 Package version comparison made easy.
 
