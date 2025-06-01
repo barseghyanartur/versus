@@ -20,6 +20,12 @@ are used for versioning (schema follows below):
   0.3.4 to 0.4).
 - All backwards incompatible changes are mentioned in this document.
 
+0.1.4
+-----
+2025-06-01
+
+- Narrow down the PyPI package size by introducing MANIFEST.in.
+
 0.1.3
 -----
 2025-05-31

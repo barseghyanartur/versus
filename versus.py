@@ -23,7 +23,7 @@ from importlib.metadata import version as get_installed_version
 from typing import Optional
 
 __title__ = "versus"
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __author__ = "Artur Barseghyan <artur.barseghyan@gmail.com>"
 __copyright__ = "2025 Artur Barseghyan"
 __license__ = "MIT"
